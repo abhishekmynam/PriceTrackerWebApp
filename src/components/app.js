@@ -1,7 +1,5 @@
 $=jQuery=require('jquery');
 var React = require('react');
-var NavHeaderObject = require('./navigationHeader');
-var LoginHeaderObject = require('./loginPageHeader');
 var RouteHandler = require('react-router').RouteHandler;
 
 var App = React.createClass({

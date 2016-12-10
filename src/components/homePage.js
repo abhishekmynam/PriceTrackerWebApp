@@ -7,6 +7,7 @@
 var React =  require ('react');
 var BestBuyApi = require ('../api/test_bestbuydatajson');  //('../api/apisToConnect');
 var ProductList = require('../api/allProducts');
+var Link = require('react-router').Link;
 
 var Home = React.createClass({
     propTypes:{
@@ -26,7 +27,10 @@ var Home = React.createClass({
         return(
             <div>
                 <div2 className = "jumbotron">
-                    <h1> Price Tracker Home </h1>
+                    <h1>  Price Tracker Home </h1>
+
+                    <Link to = "history" className = "btn btn-primary btn-lg"> My Previous Search</Link>
+
                 </div2>
                 <ProductList products = {this.state.products}/>
             </div>
